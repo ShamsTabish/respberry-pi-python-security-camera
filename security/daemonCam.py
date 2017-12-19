@@ -18,15 +18,15 @@ for i in range(numberOfImagesPerDay):
     createFolder(todaysDirectory)
     imageName = (todaysDirectory + '/' +currentTime) + ('--%s.jpg' % i)
 
-    #initialize camera
+    # initialize camera
     camera = PiCamera()
     camera.brightness=55
+    camera.led = False
+    # Capture image
 
-    #Capture image
-
-    #camera.start_preview(alpha=255)
+    # camera.start_preview(alpha=255)
     camera.capture(imageName)
-    #camera.stop_preview()
+    # camera.stop_preview()
     sleep(repeatAfter)
 
 
