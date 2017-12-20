@@ -12,22 +12,22 @@ def createFolder(directory):
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-for i in range(numberOfImagesPerDay):
-    todaysDirectory = rootDirectory + datetime.datetime.now().strftime("%y-%m-%d")
-    currentTime = datetime.datetime.now().strftime("%H-%M")
-    createFolder(todaysDirectory)
-    imageName = (todaysDirectory + '/' +currentTime) + ('--%s.jpg' % i)
+#for i in range(numberOfImagesPerDay):
+i=1        
+todaysDirectory = rootDirectory + datetime.datetime.now().strftime("%y-%m-%d")
+currentTime = datetime.datetime.now().strftime("%H-%M")
+createFolder(todaysDirectory)
+imageName = (todaysDirectory + '/' +currentTime) + ('--%s.jpg' % i)
 
     # initialize camera
-    camera = PiCamera()
-    camera.brightness=55
-    camera.led = False
+camera = PiCamera()
+camera.brightness=55
+camera.led = False
     # Capture image
 
     # camera.start_preview(alpha=255)
-    camera.capture(imageName)
+camera.capture(imageName)
     # camera.stop_preview()
-    sleep(repeatAfter)
+    #sleep(repeatAfter)
 
-
-
+exit(0)

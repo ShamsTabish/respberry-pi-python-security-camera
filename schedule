@@ -1,4 +1,6 @@
-0 8 * * *  /home/pi/backup.sh  #run this everyday @ 8 am
+#0 8 * * *  /home/pi/tab/security/runCam.sh   #run this everyday @ 8 am
+*/5 * * * * /home/pi/tab/security/runCam.sh   #run this in every 5 minutes
+
 
 # m h  dom mon dow   command
 # * * * * *  command to execute
@@ -15,6 +17,6 @@
 #RUN A TASK ON REBOOT
 #To run a command every time the Raspberr y Pi starts up, write @reboot instead of the time and date. For example:
 
-@reboot python /home/pi/tab/security/daemonCam.py  &
+#@reboot python /home/pi/tab/security/daemonCam.py  &
 
 # & indicates background task

@@ -1,0 +1,1 @@
+python /home/pi/tab/security/daemonCam.py &
