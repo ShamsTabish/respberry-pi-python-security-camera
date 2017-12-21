@@ -1,5 +1,5 @@
-#0 8 * * *  /home/pi/tab/security/runCam.sh   #run this everyday @ 8 am
-*/5 * * * * /home/pi/tab/security/runCam.sh   #run this in every 5 minutes
+#0 8 * * *  /home/pi/tab/runCam.sh   #run this everyday @ 8 am
+*/5 * * * * /home/pi/tab/runCam.sh   #run this in every 5 minutes
 
 
 # m h  dom mon dow   command
